@@ -1,0 +1,38 @@
+@media screen and  (max-width: 600px) {
+
+    body.single {
+        background-color: #fff;
+    }
+    
+
+    
+    .pokemon-details {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .pokemon-image2 {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        
+    } 
+    .pokemon-type-label {
+        margin-top: 60px;
+    }
+    .pokemon-stats-title {
+        margin: 0;
+    }
+    a.back-btn {
+        position: relative;
+        top: 48px;
+        right: 23px;
+    }
+    a.next-btn {
+        position: relative;
+        top: 49px;
+        left: 23px;
+    }
+
+}

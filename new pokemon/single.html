@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/single.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="single.js" ></script>
+    <title>Document</title>
+</head>
+<body class="single">
+
+
+    <section class="pokemon-details">
+
+        <header class="first-half">
+            <div class="pokemon-basic-info">
+                <a class="main-btn"><img class="main-img"  loading="lazy" src="img/left-arrow-svgrepo-com.svg" alt=""></a>
+                <h2 class="pokemon-name"></h2>
+                <p class="pokemon-id"></p>
+            </div>
+            <div id="pokemon-div">
+                <a class="back-btn"><img src="img/left-arrow-svgrepo-com.svg" alt=""></a>   
+                <img class="pokemon-image2" src="" alt="">
+                <a class="next-btn"><img src="img/right-arrow-svgrepo-com.svg" alt=""></a>
+            </div>
+        </header>
+
+    <div class="second-half">
+       <ul class="pokemon-type"></ul>
+      
+        <h3 class="about">About</h3>
+        <div id="pokemon-stats">
+            <p class="pokemon-height"></p>
+            <p class="pokemon-weight"></p>
+            <div id="pokemon-abilities-moves">
+                <p class="pokemon-abilities"></p>
+                <p class="pokemon-moves"></p>
+            </div>
+        </div>
+           
+        <h3 class="pokemon-stats-title">base stats</h3>
+        
+        <div class="pokemon-proggres stat-hp">
+            <p class="pokemon-hp-label"></p>
+            <progress id="hp" max="100" value=""></progress>
+        </div>
+
+        <div class="pokemon-proggres stat-attack">
+            <p class="pokemon-attack-label">Attack</p>
+            <progress id="attack" max="100" value=""></progress>
+        </div>
+        <div class="pokemon-proggres stat-defense">
+            <p class="pokemon-defense-label">Defense</p>
+            <progress id="defense" max="100" value=""></progress>
+        </div>
+        <div class="pokemon-proggres stat-speed">
+            <p class="pokemon-speed-label">Speed</p>
+            <progress id="speed" max="100" value=""></progress>
+        </div>
+        
+        </div>
+    
+    
+        </section>
+</body>
+</html>
