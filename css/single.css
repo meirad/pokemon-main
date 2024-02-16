@@ -1,6 +1,8 @@
 body.single {
     background-color: #fff;
-    background: rgb(from var(--main-color) r g b / 40%);
+/*     background: rgb(from var(--main-color) r g b / 40%);
+ */
+ background-color: var(--main-color);
 }
 
 
