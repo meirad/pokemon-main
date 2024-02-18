@@ -1,8 +1,9 @@
 
 @media screen and (max-width: 800px) {
     body.single {
-        background-color: #fff;
-    }
+        background-color: var(--main-color);
+        }
+
     
 
     
@@ -27,7 +28,7 @@
 @media screen and  (max-width: 600px) {
 
     body.single {
-        background-color: #fff;
+        background-color: var(--main-color);
     }
     
 
