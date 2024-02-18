@@ -2,7 +2,7 @@ body.single {
     background-color: #fff;
 /*     background: rgb(from var(--main-color) r g b / 40%);
  */
- background-color: /* var(--main-color) */ red;
+ background-color:  var(--main-color)
 }
 
 
@@ -46,7 +46,7 @@ a.next-btn {
 }
 
 .first-half {
-    background-color: lch(from var(--main-color) 20% c h);
+    background-color: var(--main-color);
     padding-top: 5px;
     display: flex;
     flex-direction: column;
