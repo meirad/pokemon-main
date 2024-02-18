@@ -46,7 +46,7 @@ a.next-btn {
 }
 
 .first-half {
-    background-color: var(--main-color);
+    background-color: lch(from var(--main-color) 20% c h);
     padding-top: 5px;
     display: flex;
     flex-direction: column;
