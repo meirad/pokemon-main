@@ -1,5 +1,5 @@
 async function getData() {
-    const response = await fetch( 'https://pokeapi.co/api/v2/pokemon?limit=20');
+    const response = await fetch( `https://pokeapi.co/api/v2/pokemon?limit=${20}`);
     const data = await response.json();
     return data.results;
 } 
@@ -15,12 +15,13 @@ let input = document.getElementById('name');
 let pokelist = document.querySelector('.poke-list');
 let datalist = document.getElementById('pokemon-names');
 let mainContent = document.querySelector('.main-container'); 
-
 async function displayData() {
     const pokemons = await getData();
-    for (let pokemon of pokemons) {
-        const pokemonData = await getPokemonData(pokemon.url);
 
+    for (let i = 0; i < 20; i++) {
+        const pokemon = pokemons[i];
+        const pokemonData = await getPokemonData(pokemon.url);
+        
         let option = document.createElement('option');
         option.value = pokemonData.name;
         datalist.appendChild(option);
@@ -49,15 +50,13 @@ async function displayData() {
         listItem.appendChild(nameElement);
         pokelist.appendChild(a);
 
-listItem.dataset.name = pokemonData.id;
+        listItem.dataset.name = pokemonData.id;
 
-listItem.addEventListener('click', async (event) => {
-    
-    let name = event.currentTarget.dataset.name;
-
-    pokelist.innerHTML = '';
-    displaySinglePokemon(); 
-});
+        listItem.addEventListener('click', async (event) => {
+            let name = event.currentTarget.dataset.name;
+            pokelist.innerHTML = '';
+            displaySinglePokemon(); 
+        });
     }
 }
 
